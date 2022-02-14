@@ -1,0 +1,150 @@
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,600&family=Rowdies:wght@300&family=Rubik+Beastly&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }    
+        
+        html {
+            width: 100%;
+            height: 100%;
+            font-size: 62.5%;
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+            text-shadow: 7x;
+
+        }
+        
+        body {
+            background: url(img/the-male-athlete-training-hard-in-the-gym.jpg);            
+            background: linear-gradient(rgba (17, 17, 17, 0.8) rgba(20, 20, 20, 1));
+            background-color: rgb(43, 25, 25);
+            background-position: center center;
+            background-size: cover;
+            background-position-y: 0px;
+            background-repeat: no-repeat;
+
+        }
+        
+        header {
+            width: 100%;
+            height: 7vh;
+            background: rgba(22, 22, 22, 0.2);
+            box-shadow: 2px;
+        }
+        
+        .menu-principal {
+            text-transform: uppercase;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.8rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            letter-spacing: 0.4rem;
+            cursor: pointer;
+        }
+        
+        .menu-principal .lista-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        .menu-principal .lista-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 1.5rem;
+            transform: 2ms ease-in;
+            position: relative;
+        }
+        
+        .menu-principal .lista-menu a:before {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 0px;
+            height: 1px;
+            background-color: red;
+            transition: all .5s ease;
+        }
+        
+        .menu-principal .lista-menu a:hover:before {
+            width: 100%;
+        }
+        
+        main {
+            height: 93vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .titulo {
+            width: 850px;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .subtitulo {
+            margin-bottom: 12rem;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+        }
+        .botao {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .botao button{
+            border: none;
+            padding: 5px 5px;
+            width: 250px;
+            height: 60x;
+            cursor: pointer;
+            color: rgb(228, 226, 226);
+            text-transform: uppercase;
+            background-color: rgba(85, 76, 76, 0.562);
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            border-radius: 20px;
+            position: relative;
+            transition: .5s;
+        }
+        .botao button:hover {
+            color: rgb(255, 255, 255);
+            border: none;
+            transform: translateY(-5px);
+            transition: all 0.2s;
+        }
+        .botao button::before {
+            content: '';
+            border-radius: 20px;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            width: 0;
+            height: 60px;
+            background-color: rgb(61, 61, 61);
+            z-index: -1;
+            transition: .5s;
+            
+        }            
+
+        .botao:hover:before {
+            width: 100%;
+            
+
+        }
